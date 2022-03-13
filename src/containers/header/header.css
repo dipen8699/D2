@@ -1,0 +1,76 @@
+.dev_header-text {
+    position: absolute;
+    width: 900px;
+    height: 247px;
+    left: 170px;
+    top: 264px;
+}
+
+.header-title {
+    position: absolute;
+    width: 91px;
+    height: 28px;
+    left: 10px;
+
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 28px;
+    /* identical to box height */
+
+    color: #000000;
+}
+
+.header-heading {
+    position: absolute;
+    width: 502px;
+    height: 132px;
+
+    font-family: var(--header-font-family);
+    font-style: bold;
+    font-weight: 1000;
+    font-size: 102px;
+    line-height: 129.5%;
+    /* identical to box height, or 132px */
+
+    letter-spacing: -0.08em;
+
+    color: #383838;
+}
+.header-subheading {
+    position: absolute;
+    width: 666px;
+    height: 67px;
+    top: 120px;
+    left: 6px;
+
+    font-family: var(--header-font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 52px;
+    line-height: 129.5%;
+
+    letter-spacing: -0.08em;
+
+    color: #383838;
+}
+
+.header-desc {
+    position: absolute;
+    width: 666px;
+    height: 41px;
+    left: 6px;
+    top: 180px;
+
+    font-family: var(--header-font-family);
+    font-style: bold;
+    font-weight: 250;
+    font-size: 32px;
+    line-height: 129.5%;
+    /* or 41px */
+
+    letter-spacing: -0.08em;
+
+    color: #383838;
+}

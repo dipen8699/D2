@@ -1,0 +1,116 @@
+.dev_sidebar {
+    display: flex;
+    position: fixed;
+    width: 104px;
+    height: 990px;
+    left: 0px;
+    top: 0px;
+    background: transparent;
+}
+
+.dev_sidebar_logo {
+    position: absolute;
+    width: 68px;
+    height: 67px;
+    left: 29px;
+    top: 16px;
+    cursor: pointer;
+}
+
+.social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+
+    position: absolute;
+    width: 16.27px;
+    height: 175.35px;
+    left: 44.86px;
+    top: 400px;
+
+    opacity: 1;
+}
+
+.twitter {
+    position: flex;
+    width: 16.27px;
+    height: 16.27px;
+    left: 0px;
+    top: 0px;
+    font-size: 1.75rem;
+    /* Inside auto layout */
+    cursor: pointer;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 26px 0px;
+}
+
+.facebook {
+    position: static;
+    width: 14.27px;
+    height: 14.27px;
+    left: 0px;
+    top: 0px;
+    font-size: 1.75rem;
+
+    /* Inside auto layout */
+    cursor: pointer;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 26px 0px;
+}
+
+.github {
+    position: static;
+    width: 14.27px;
+    height: 14.27px;
+    left: 0px;
+    top: 0px;
+    font-size: 1.75rem;
+
+    /* Inside auto layout */
+    cursor: pointer;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 26px 0px;
+}
+
+.linkedin {
+    position: static;
+    width: 14.27px;
+    height: 14.27px;
+    left: 0px;
+    top: 0px;
+    font-size: 1.75rem;
+    /* Inside auto layout */
+    cursor: pointer;
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+    margin: 26px 0px;
+}
+
+.border_verticle {
+    position: absolute;
+    width: 2px;
+    height: 690px;
+    left: 104px;
+    top: 0px;
+
+    background: #eaeaea;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.border_horizontal {
+    position: absolute;
+    width: 106px;
+    height: 2px;
+    left: 0px;
+    top: 690px;
+    background: #eaeaea;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
