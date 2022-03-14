@@ -21,7 +21,17 @@
     flex-direction: row;
 }
 
-.dev_navbar-menu_container p,
+.dev_navbar-menu_container p {
+    color: #e1e1e4;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    margin: 0 1rem;
+    cursor: pointer;
+}
 .dev_navbar-links_container p {
     color: #000;
     font-family: var(--font-family);
@@ -51,7 +61,7 @@
     flex-direction: column;
 
     text-align: end;
-    background: transparent;
+    background: rgba(0, 0, 0, 0.7);
     padding: 2rem;
     position: absolute;
     right: 0;

@@ -15,9 +15,9 @@ const Header = () => {
                 <span>
                     <a href='#'></a>
                 </span>
-                <div className='d2_header_image'>
-                    <img src={ai} alt='Ai' />
-                </div>
+            </div>
+            <div className='d2_header_image'>
+                <img src={ai} alt='Ai' />
             </div>
         </div>
     )

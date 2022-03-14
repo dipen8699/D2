@@ -40,8 +40,7 @@
 }
 
 span {
-    position: relative;
-    display: inline-flex;
+    display: flex;
     width: 180px;
     height: 55px;
     margin: 0 0px;
@@ -55,10 +54,21 @@ span a {
     transition: transform 0.25s;
     font-family: var(--font-family);
 }
-span a:before,
-span a:after {
+span a:before {
     position: absolute;
     content: 'Ask Me How';
+    height: 55px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid #f1214f;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+span a:after {
+    position: absolute;
+    content: 'How ?';
     height: 55px;
     width: 180px;
     display: flex;
