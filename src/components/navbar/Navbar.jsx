@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import logo from '../../assets/D2.svg'
 import './navbar.css'
 
 const Navbar = () => {
@@ -8,21 +9,24 @@ const Navbar = () => {
     return (
         <div className='dev_navbar'>
             <div className='dev_navbar-links'>
+                <div className='dev_sidebar_logo'>
+                    <img src={logo} alt='logo' />
+                </div>
                 <div className='dev_navbar-links_container'>
                     <p>
-                        <a href='/'>Home</a>
+                        <a href='#home'>Home</a>
                     </p>
                     <p>
-                        <a href='/project'>Project</a>
+                        <a href='#project'>Project</a>
                     </p>
                     <p>
-                        <a href='/about'>About</a>
+                        <a href='#about'>About</a>
                     </p>
                     <p>
-                        <a href='/reviews'>Reviews</a>
+                        <a href='#reviews'>Reviews</a>
                     </p>
                     <p>
-                        <a href='/contact'>Contact</a>
+                        <a href='#contact'>Contact</a>
                     </p>
                 </div>
             </div>
@@ -44,19 +48,19 @@ const Navbar = () => {
                     <div className='dev_navbar-menu_container scale-up-center'>
                         <div className='dev_navbar-menu_container-links'>
                             <p>
-                                <a href='/'>Home</a>
+                                <a href='#home'>Home</a>
                             </p>
                             <p>
-                                <a href='/project'>Project</a>
+                                <a href='#project'>Project</a>
                             </p>
                             <p>
-                                <a href='/about'>About</a>
+                                <a href='#about'>About</a>
                             </p>
                             <p>
-                                <a href='/reviews'>Reviews</a>
+                                <a href='#reviews'>Reviews</a>
                             </p>
                             <p>
-                                <a href='/contact'>Contact</a>
+                                <a href='#contact'>Contact</a>
                             </p>
                         </div>
                     </div>

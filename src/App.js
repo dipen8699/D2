@@ -8,7 +8,7 @@ const App = () => {
         <div className='App'>
             <div>
                 <div className='theme_bg bg-pan-left'></div>
-                <Sidebar />
+                {/* <Sidebar /> */}
                 <Navbar />
                 <Header />
             </div>
