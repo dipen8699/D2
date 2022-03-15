@@ -1,4 +1,4 @@
-.dev_navbar {
+/* .dev_navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -7,6 +7,7 @@
 .dev_sidebar_logo {
     width: 68px;
     height: 67px;
+    margin-right: auto;
 }
 .dev_navbar-links {
     flex: 1;
@@ -19,20 +20,21 @@
 .dev_navbar-links_container {
     display: flex;
     flex-direction: row;
+    position: absolute;
 }
 
-.dev_navbar-menu_container p {
+.menu {
     color: #e1e1e4;
     font-family: var(--font-family);
     font-weight: 500;
     font-size: 25px;
-    line-height: 25px;
+    line-height: 23px;
     text-transform: capitalize;
 
     margin: 0 1rem;
     cursor: pointer;
 }
-.dev_navbar-links_container p {
+.main_menu {
     color: #000;
     font-family: var(--font-family);
     font-weight: 500;
@@ -44,7 +46,7 @@
     cursor: pointer;
 }
 .dev_navbar-menu {
-    margin-left: 1rem;
+    margin-left: auto;
 
     display: none;
     position: relative;
@@ -63,17 +65,16 @@
     text-align: end;
     background: rgba(0, 0, 0, 0.7);
     padding: 2rem;
-    position: absolute;
+    position: inherit;
     right: 0;
     top: 40px;
-    margin-top: 1rem;
     min-width: 210px;
     border-radius: 5px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
 }
 
-.dev_navbar-menu_container p {
-    margin: 1rem 0;
+.menu {
+    margin: 0.5rem 0;
 }
 
 @media screen and (max-width: 1050px) {
@@ -99,5 +100,42 @@
 
     .dev_navbar-menu_container {
         top: 20px;
+    }
+} */
+
+.navbar-toggler {
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar a {
+    font-size: 1.3rem;
+    text-transform: capitalize;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.menu_active {
+    font-weight: bold;
+    border-bottom: 1px solid black;
+}
+
+.navbar a:hover {
+    color: black !important;
+}
+
+@media (max-width: 991px) {
+    .navbar_brand {
+        font-size: 1.5rem !important;
+    }
+
+    .menu_active {
+        font-weight: bold;
+        border-bottom: none;
     }
 }

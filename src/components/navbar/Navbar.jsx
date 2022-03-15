@@ -2,69 +2,98 @@ import React, { useState } from 'react'
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
 import logo from '../../assets/D2.svg'
 import './navbar.css'
+import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
     const [toggleMenu, setToggleMenu] = useState(false)
 
     return (
-        <div className='dev_navbar'>
-            <div className='dev_navbar-links'>
-                <div className='dev_sidebar_logo'>
-                    <img src={logo} alt='logo' />
-                </div>
-                <div className='dev_navbar-links_container'>
-                    <p>
-                        <a href='#home'>Home</a>
-                    </p>
-                    <p>
-                        <a href='#project'>Project</a>
-                    </p>
-                    <p>
-                        <a href='#about'>About</a>
-                    </p>
-                    <p>
-                        <a href='#reviews'>Reviews</a>
-                    </p>
-                    <p>
-                        <a href='#contact'>Contact</a>
-                    </p>
-                </div>
-            </div>
-            <div className='dev_navbar-menu'>
-                {toggleMenu ? (
-                    <RiCloseLine
-                        color='#000'
-                        size={27}
-                        onClick={() => setToggleMenu(false)}
-                    />
-                ) : (
-                    <RiMenu3Line
-                        color='#000'
-                        size={27}
-                        onClick={() => setToggleMenu(true)}
-                    />
-                )}
-                {toggleMenu && (
-                    <div className='dev_navbar-menu_container scale-up-center'>
-                        <div className='dev_navbar-menu_container-links'>
-                            <p>
-                                <a href='#home'>Home</a>
-                            </p>
-                            <p>
-                                <a href='#project'>Project</a>
-                            </p>
-                            <p>
-                                <a href='#about'>About</a>
-                            </p>
-                            <p>
-                                <a href='#reviews'>Reviews</a>
-                            </p>
-                            <p>
-                                <a href='#contact'>Contact</a>
-                            </p>
+        <div className='container-fluid nav_bg'>
+            <div className='row'>
+                <div className='col-10 mx-auto'>
+                    <nav class='navbar navbar-expand-lg navbar-light '>
+                        <div class='container-fluid'>
+                            <NavLink exact class='navbar-brand' to='/'>
+                                <img
+                                    src={logo}
+                                    alt='D2'
+                                    width='52'
+                                    height='52'
+                                    class='d-inline-block align-text-top'
+                                />
+                            </NavLink>
+                            <button
+                                class='navbar-toggler'
+                                type='button'
+                                data-bs-toggle='collapse'
+                                data-bs-target='#navbarSupportedContent'
+                                aria-controls='navbarSupportedContent'
+                                aria-expanded='false'
+                                aria-label='Toggle navigation'
+                            >
+                                <span class='navbar-toggler-icon'></span>
+                            </button>
+                            <div
+                                class='collapse navbar-collapse'
+                                id='navbarSupportedContent'
+                            >
+                                <ul class='navbar-nav ml-auto mb-2 mb-lg-0'>
+                                    <li className='nav-item'>
+                                        <NavLink
+                                            activeClassName='menu_active'
+                                            exact
+                                            className='nav-link active'
+                                            aria-current='page'
+                                            to='/'
+                                        >
+                                            Home
+                                        </NavLink>
+                                    </li>
+                                    <li className='nav-item'>
+                                        <NavLink
+                                            activeClassName='menu_active'
+                                            exact
+                                            className='nav-link'
+                                            to='/project'
+                                        >
+                                            Project
+                                        </NavLink>
+                                    </li>
+                                    <li className='nav-item'>
+                                        <NavLink
+                                            activeClassName='menu_active'
+                                            exact
+                                            className='nav-link'
+                                            to='/skills'
+                                        >
+                                            Skills
+                                        </NavLink>
+                                    </li>
+                                    <li className='nav-item'>
+                                        <NavLink
+                                            activeClassName='menu_active'
+                                            exact
+                                            className='nav-link'
+                                            to='/about'
+                                        >
+                                            About
+                                        </NavLink>
+                                    </li>
+                                    <li className='nav-item'>
+                                        <NavLink
+                                            activeClassName='menu_active'
+                                            exact
+                                            className='nav-link'
+                                            to='/contact'
+                                        >
+                                            Contact
+                                        </NavLink>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                )}
+                    </nav>
+                </div>
             </div>
         </div>
     )
