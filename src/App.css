@@ -15,70 +15,11 @@ a {
     text-decoration: none;
 }
 
-.theme_bg {
-    background-image: url(/src/assets/Frame.svg);
-    position: absolute;
-    width: 1600px;
-    height: 250px;
-    left: 0px;
-
-    mix-blend-mode: normal;
-    transform: matrix(1, 0, 0, 1, 0, 0);
-}
 .gradient__text {
     background: var(--gradient-text);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.section__padding {
-    padding: 4rem 6rem;
-}
-
-.section__margin {
-    margin: 4rem 6rem;
-}
-
-.bg-pan-left {
-    animation: bg-pan-left 5s infinite alternate-reverse both;
-}
-
-@-webkit-keyframes bg-pan-left {
-    0% {
-        background-position: 50% 100%;
-    }
-    100% {
-        background-position: 50% 0%;
-    }
-}
-@keyframes bg-pan-left {
-    0% {
-        background-position: 50% 100%;
-    }
-    100% {
-        background-position: 50% 0%;
-    }
-}
-
-@media screen and (max-width: 700px) {
-    .section__padding {
-        padding: 4rem;
-    }
-
-    .section__margin {
-        margin: 4rem;
-    }
-}
-
-@media screen and (max-width: 550px) {
-    .section__padding {
-        padding: 4rem 2rem;
-    }
-
-    .section__margin {
-        margin: 4rem 2rem;
-    }
 }
 
 .scale-up-center {

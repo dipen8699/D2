@@ -2,6 +2,7 @@ import React from 'react'
 import './header.css'
 import vector from '../../assets/header.png'
 import { NavLink } from 'react-router-dom'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 
 const Header = () => {
     return (
@@ -14,22 +15,23 @@ const Header = () => {
                                 <div className='col-md-6 pt-5 pt-lg-0 order-2 order-lg-1 d-flex justify-content-center flex-column'>
                                     <h2>Hi There,</h2>
                                     <h1>
-                                        I am{' '}
+                                        I am
                                         <strong className='brand-name'>
-                                            Dipen
+                                            Dipen Kanani
                                         </strong>
                                     </h1>
                                     <h2>
                                         I am developer during daytime <br />&
-                                        work with batman during nights.
+                                        work with batman🦇 during nights.
                                     </h2>
                                     <div className='mt-3'>
-                                        <span>
-                                            <NavLink
-                                                className='btn-get-started'
-                                                to='/about'
-                                            ></NavLink>
-                                        </span>
+                                        <NavLink
+                                            exact
+                                            to='/about'
+                                            className='btn-get-started'
+                                        >
+                                            Ask Me How <FaLongArrowAltRight />
+                                        </NavLink>
                                     </div>
                                 </div>
                                 <div className='col-lg-6 order-1 order-lg-2 header-img'>
@@ -49,20 +51,3 @@ const Header = () => {
 }
 
 export default Header
-
-// <div className='dev_header section__padding'>
-//             <div className='dev_header-content'>
-//                 <p>Hi There,</p>
-//                 <h1>I am Dipen</h1>
-//                 <h2>
-//                     I am developer during daytime
-//                     <br />& work with batman during nights.
-//                 </h2>
-//                 <span>
-//                     <Link to='/about'></Link>
-//                 </span>
-//             </div>
-//             <div className='d2_header_image'>
-//                 <img src={ai} alt='Ai' />
-//             </div>
-//         </div>

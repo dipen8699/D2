@@ -18,63 +18,28 @@
 }
 
 #header .brand-name {
-    color: #f1214f;
+    color: #79ffe1;
 }
 
 .header-img {
     text-align: right;
 }
+#header .btn-get-started {
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #79ffe1;
+    border: 2px solid #79ffe1;
+    text-decoration: none;
+}
 
-span {
-    display: flex;
-    width: 180px;
-    height: 55px;
-    margin: 0 0px;
-    perspective: 1000px;
-}
-span a {
-    font-size: 19px;
-    letter-spacing: 1px;
-    transform-style: preserve-3d;
-    transform: translateZ(-25px);
-    transition: transform 0.25s;
-    font-family: var(--font-family);
-}
-span a:before {
-    position: absolute;
-    content: 'Ask Me How';
-    height: 55px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid #f1214f;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-span a:after {
-    position: absolute;
-    content: 'How ?';
-    height: 55px;
-    width: 180px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 5px solid #f1214f;
-    box-sizing: border-box;
-    border-radius: 5px;
-}
-span a:before {
-    color: #fff;
-    background: #f1214f;
-    transform: rotateY(0deg) translateZ(25px);
-}
-span a:after {
-    color: #f1214f;
-    transform: rotateX(90deg) translateZ(25px);
-}
-span a:hover {
-    transform: translateZ(-25px) rotateX(-90deg);
+#header .btn-get-started:hover {
+    background-color: #79ffe1;
+    color: black;
 }
 
 .animated {

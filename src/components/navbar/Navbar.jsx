@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { RiMenu3Line, RiCloseLine } from 'react-icons/ri'
+import { IoMenu } from 'react-icons/io5'
 import logo from '../../assets/D2.svg'
 import './navbar.css'
 import { NavLink } from 'react-router-dom'
@@ -11,19 +11,19 @@ const Navbar = () => {
         <div className='container-fluid nav_bg'>
             <div className='row'>
                 <div className='col-10 mx-auto'>
-                    <nav class='navbar navbar-expand-lg navbar-light '>
-                        <div class='container-fluid'>
-                            <NavLink exact class='navbar-brand' to='/'>
+                    <nav className='navbar navbar-expand-lg'>
+                        <div className='container-fluid'>
+                            <NavLink exact className='navbar-brand' to='/'>
                                 <img
                                     src={logo}
                                     alt='D2'
                                     width='52'
                                     height='52'
-                                    class='d-inline-block align-text-top'
+                                    className='d-inline-block align-text-top'
                                 />
                             </NavLink>
                             <button
-                                class='navbar-toggler'
+                                className='navbar-toggler'
                                 type='button'
                                 data-bs-toggle='collapse'
                                 data-bs-target='#navbarSupportedContent'
@@ -31,13 +31,15 @@ const Navbar = () => {
                                 aria-expanded='false'
                                 aria-label='Toggle navigation'
                             >
-                                <span class='navbar-toggler-icon'></span>
+                                <span className='navbar-toggler-icon'>
+                                    <IoMenu />
+                                </span>
                             </button>
                             <div
                                 class='collapse navbar-collapse'
                                 id='navbarSupportedContent'
                             >
-                                <ul class='navbar-nav ml-auto mb-2 mb-lg-0'>
+                                <ul className='navbar-nav ml-auto mb-2 mb-lg-0'>
                                     <li className='nav-item'>
                                         <NavLink
                                             activeClassName='menu_active'
