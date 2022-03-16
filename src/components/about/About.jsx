@@ -67,16 +67,14 @@ const About = () => {
                                         match than click button below.
                                     </p>
                                     <div className='mt-3'>
-                                        <div className='mt-3'>
-                                            <NavLink
-                                                exact
-                                                to='/contact'
-                                                className='btn-get-started'
-                                            >
-                                                Touch me
-                                                <FaLongArrowAltRight />
-                                            </NavLink>
-                                        </div>
+                                        <NavLink
+                                            exact
+                                            to='/contact'
+                                            className='btn-get-started'
+                                        >
+                                            Touch me
+                                            <FaLongArrowAltRight />
+                                        </NavLink>
                                     </div>
                                 </div>
                                 <div className='col-lg-6 order-1 order-lg-2 about-img'>

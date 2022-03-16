@@ -27,6 +27,7 @@
     font-size: 16px;
     letter-spacing: 1;
     display: inline-block;
+    background-color: transparent;
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
