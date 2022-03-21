@@ -1,152 +1,150 @@
 .title {
-    text-align: center;
-    margin-bottom: 4rem;
-    color: #79ffe1;
+	text-align: center;
+	margin-bottom: 4rem;
+	color: #79ffe1;
 }
 .underline {
-    width: 6rem;
-    height: 0.25rem;
-    background: red;
-    margin-left: auto;
-    margin-right: auto;
+	width: 6rem;
+	height: 0.25rem;
+	background: red;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .project-list {
-    width: 100%;
-    height: 80vh;
-    margin-top: 70px;
+	width: 100%;
+	height: 80vh;
+	margin-top: 70px;
 }
 
 .single-project {
-    background-color: rgb(255, 172, 183, 0.9);
-    border-radius: 0.25rem;
-    margin: 2rem 1rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s linear;
+	background-color: rgb(255, 172, 183, 0.9);
+	border-radius: 0.25rem;
+	margin: 2rem 1rem;
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s linear;
 }
 
 .single-project:hover {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 .single-project img {
-    width: 100%;
-    height: 10rem;
-    object-fit: cover;
-    border-radius: 50px;
-    padding: 1rem 1rem 0 1rem;
-    filter: blur(6px);
-    -webkit-filter: blur(6px);
+	width: 100%;
+	height: 10rem;
+	object-fit: cover;
+	border-radius: 50px;
+	padding: 1rem 1rem 0 1rem;
 }
 .project-info {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 1.5rem;
-    font-weight: 600;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1.5rem;
+	font-weight: 600;
 }
 .project-info h4 {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .single-project button {
-    background: transparent;
-    border-color: transparent;
-    text-transform: capitalize;
-    color: #0b243d;
-    font-size: 1.2rem;
-    font-weight: 800;
-    cursor: pointer;
-    padding-left: 0.25rem;
+	background: transparent;
+	border-color: transparent;
+	text-transform: capitalize;
+	color: #0b243d;
+	font-size: 1.2rem;
+	font-weight: 800;
+	cursor: pointer;
+	padding-left: 0.25rem;
 }
 
 .single-project span {
-    display: inline-block;
-    background-color: rgba(229, 231, 235, 1);
-    border-radius: 50px;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    margin: 0 0.3rem 0.5rem 0.5rem;
+	display: inline-block;
+	background-color: rgba(229, 231, 235, 1);
+	border-radius: 50px;
+	padding: 0.25rem 0.75rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin: 0 0.3rem 0.5rem 0.5rem;
 }
 
 .p-info {
-    font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin: -1.5rem 0 0 0.3rem;
+	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	margin: -1.5rem 0 0 0.3rem;
 }
 
 .p-lang {
-    font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-    margin: -0.4rem 0 -0.1rem 0.7rem;
+	font-weight: 300;
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	margin: -0.4rem 0 -0.1rem 0.7rem;
 }
 
 .btn-get-started {
-    display: inline-block;
-    background-color: rgba(229, 231, 235, 1);
-    border-radius: 50px;
-    padding: 0.25rem 0.75rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    margin: 0 0 0.5rem 0.5rem;
+	display: inline-block;
+	background-color: rgba(229, 231, 235, 1);
+	border-radius: 50px;
+	padding: 0.25rem 0.75rem;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	margin: 0 0 0.5rem 0.5rem;
 }
 
 .btn-get-started:hover {
-    background-color: rgb(255, 172, 183);
-    color: black;
-    border: 1px solid white;
+	background-color: rgb(255, 172, 183);
+	color: black;
+	border: 1px solid white;
 }
 
 .animated {
-    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+	animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
 @-webkit-keyframes up-down {
-    0% {
-        transform: translateY(6px);
-    }
-    100% {
-        transform: translateY(-6px);
-    }
+	0% {
+		transform: translateY(6px);
+	}
+	100% {
+		transform: translateY(-6px);
+	}
 }
 
 @keyframes up-down {
-    0% {
-        transform: translateY(6px);
-    }
-    100% {
-        transform: translateY(-6px);
-    }
+	0% {
+		transform: translateY(6px);
+	}
+	100% {
+		transform: translateY(-6px);
+	}
 }
 
 .single-project:hover {
-    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
-    transform: translate3d(0, 0, 0);
-    backface-visibility: hidden;
-    perspective: 1000px;
+	animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+	transform: translate3d(0, 0, 0);
+	backface-visibility: hidden;
+	perspective: 1000px;
 }
 
 @keyframes shake {
-    10%,
-    90% {
-        transform: translate3d(-1px, 0, 0);
-    }
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
 
-    20%,
-    80% {
-        transform: translate3d(2px, 0, 0);
-    }
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
 
-    30%,
-    50%,
-    70% {
-        transform: translate3d(-4px, 0, 0);
-    }
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
 
-    40%,
-    60% {
-        transform: translate3d(4px, 0, 0);
-    }
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
 }
