@@ -1,0 +1,49 @@
+.skill__box {
+	background-color: rgba(121, 255, 225, 0.8);
+	border-radius: 2%;
+	height: 50%;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.skill > h1 {
+	color: rgba(121, 255, 225, 1);
+}
+
+.skill__box > h2 {
+	margin-bottom: 1rem;
+}
+
+.icon {
+	margin-left: 1rem;
+}
+
+.header-img-1 {
+	margin-left: auto;
+}
+
+.header-img-1 > img {
+	margin-top: 2rem;
+}
+
+.animated_new {
+	animation: left-right 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes left-right {
+	0% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(-10px);
+	}
+}
+
+@keyframes left-right {
+	0% {
+		transform: translateX(10px);
+	}
+	100% {
+		transform: translateX(-10px);
+	}
+}
