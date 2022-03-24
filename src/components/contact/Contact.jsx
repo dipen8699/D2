@@ -1,9 +1,11 @@
 import React, { useState } from 'react'
 import './contact.css'
+import { useHistory } from 'react-router-dom'
 import { FaLongArrowAltRight } from 'react-icons/fa'
 import emailjs from 'emailjs-com'
 
 const Contact = () => {
+	const history = useHistory()
 	const [data, setData] = useState({
 		fullname: '',
 		phone: '',
@@ -30,7 +32,10 @@ const Contact = () => {
 			)
 			.then(
 				(result) => {
-					window.location.reload() //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
+					alert(
+						'your proposal is submitted and we will contact you soon'
+					)
+					history.push('/') //This is if you still want the page to reload (since e.preventDefault() cancelled that behavior)
 				},
 				(error) => {
 					console.log(error.text)
